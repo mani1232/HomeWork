@@ -24,7 +24,20 @@ public class Main {
     public static ArrayList<Product> list = new ArrayList<>(5);
 
     public static void main(String[] args) {
+        addDefaultProducts();
 
+    }
+
+    public static void addDefaultProducts() {
+        list.add(new Product("Apples", true));
+        list.add(new Product("Oranges", true));
+        list.add(new Product("apricot", false));
+        list.add(new Product("banana", false));
+        list.add(new Product("kiwi", true));
+    }
+
+    public static void checkById(int id){
+        if (list.get(id).inStock()) System.out.printf("%s inStock \n", list.get(id).name());
     }
 
 }
