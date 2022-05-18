@@ -1,10 +1,21 @@
+/* TODO
+    Задание 1
+    ------------
+    1) При помощи ArrayList получите
+    данные каждого из членов бригады:
+    имя, телефон.
+    2) В бригаде 5 человек.
+    3) Формирование списка членов бригады
+    сделайте в отдельном методе.
+    4) Вывод списка членов бригады
+    сделайте в отдельном методе.
+ */
 package ArrayList.Task1;
 
 import java.util.ArrayList;
 
 public class Main {
     public static ArrayList<Human> list = new ArrayList<>(5);
-
 
     public static void main(String[] args) {
         addDefaultHumans();
@@ -24,5 +35,4 @@ public class Main {
             System.out.printf("%s %s \n", h.name(), h.telephone());
         }
     }
-
 }
